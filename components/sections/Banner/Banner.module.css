@@ -1,0 +1,47 @@
+.Banner {
+  background-image: url('../../../public/home-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 950px !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 7rem 2.5rem;
+}
+
+.CTAButton {
+  background-color: #fff;
+  border-color: #fff;
+  color: #484747;
+  font-weight: 800;
+}
+
+.CTAButton:hover {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+  color: #484747;
+}
+
+.CTAButton::after {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+  color: #484747;
+}
+
+@media only screen and (min-width: 1400px) {
+  .Banner {
+    min-height: 1200px !important;
+    padding: 7rem 6rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  /* tablets and desktop */
+  
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  
+}
