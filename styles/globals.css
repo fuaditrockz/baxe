@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, a {
   font-family: 'Montserrat', sans-serif;
 }
 p {
@@ -30,6 +30,14 @@ h3 { font-size: 40px; }
 h4 { font-size: 36px; }
 h5 { font-size: 30px; }
 h6 { font-size: 25px; }
+
+ul {
+  padding-left: 0 !important;
+}
+
+ul li {
+  list-style: none;
+}
 
 * {
   box-sizing: border-box;
@@ -53,9 +61,33 @@ h6 { font-size: 25px; }
   padding: 10px 50px;
 }
 
+.baxe-container {
+  padding: 0rem 2.5rem;
+}
+
+.footer-container {
+  background-image: url('../public/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 5rem 2.5rem 0;
+  height: 805px;
+}
+
+.footer-top {
+  margin-bottom: 70px;
+}
+
 @media only screen and (min-width: 1400px) {
   .navbar {
     padding: 0.5rem 6rem !important;
+  }
+  .footer-container {
+    height: 1045px;
+  }
+  .footer-top {
+    margin-bottom: 250px;
   }
 }
 

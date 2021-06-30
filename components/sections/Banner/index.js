@@ -7,10 +7,28 @@ import time from '../../../public/featured/time.png'
 import bloomberg from '../../../public/featured/bloomberg.png'
 import forbes from '../../../public/featured/forbes.png'
 
-const Banner = () => {
+const FeaturedLogo = ({
+  logoImg,
+  alt,
+  height,
+  width,
+}) => {
   return (
-    <Jumbotron className={styles.Banner}>
-      <Container fluid style={{ marginBottom: 350 }}>
+    <Col lg={4} style={{ display: 'flex', justifyContent: 'center' }}>
+      <Image
+        src={logoImg}
+        alt={alt}
+        height={height}
+        width={width}
+      />
+    </Col>
+  )
+}
+
+const Banner = () => {
+  const renderTop = () => {
+    return (
+      <Container fluid style={{ marginBottom: 330 }}>
         <Row>
           <Col lg={6}>
             <h4 style={{ color: '#fff', }}>The world’s most innovative</h4>
@@ -31,38 +49,44 @@ const Banner = () => {
           </Col>
         </Row>
       </Container>
-      <hr style={{ borderWidth: 3, color: '#929090'}} />
+    )
+  }
+
+  const renderBottom = () => {
+    return (
       <Container fluid>
         <Row style={{ padding: '0 20rem 1rem' }}>
           <Col lg={12}>
             <p style={{ color: '#6d7777', textAlign: 'center'}}>As featured on:</p>
           </Col>
-          <Col lg={4} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Image
-              src={time}
-              alt="Time Logo"
-              height={30.13}
-              width={116}
-            />
-          </Col>
-          <Col lg={4} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Image
-              src={bloomberg}
-              alt="Bloomberg Logo"
-              height={29.05}
-              width={188.36}
-            />
-          </Col>
-          <Col lg={4} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Image
-              src={forbes}
-              alt="Forbes Logo"
-              height={36}
-              width={142}
-            />
-          </Col>
+          <FeaturedLogo
+            logoImg={time}
+            alt="Time Logo"
+            height={30.13}
+            width={116}
+          />
+          <FeaturedLogo
+            logoImg={bloomberg}
+            alt="Bloomberg Logo"
+            height={29.05}
+            width={188.36}
+          />
+          <FeaturedLogo
+            logoImg={forbes}
+            alt="Forbes Logo"
+            height={36}
+            width={142}
+          />
         </Row>
       </Container>
+    )
+  }
+
+  return (
+    <Jumbotron className={styles.Banner}>
+      {renderTop()}
+      <hr style={{ borderWidth: 3, color: '#929090'}} />
+      {renderBottom()}
       <hr style={{ borderWidth: 3, color: '#929090'}} />
     </Jumbotron>
   )
