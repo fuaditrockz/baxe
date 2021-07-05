@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap'
-import { Header, Footer } from '../components/partials'
+import { Header, Footer, Footer2 } from '../components/partials'
 
 import Banner from '../components/sections/Banner'
 import Welcome from '../components/sections/Welcome'
@@ -17,6 +17,7 @@ export default function Home() {
       <DownloadApp />
       <Features />
       <Footer />
+      <Footer2 />
     </>
   )  
 }
