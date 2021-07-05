@@ -61,7 +61,7 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
+  .WelcomeContainer {
+    top: 34px;
+  }
 }

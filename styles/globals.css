@@ -136,7 +136,6 @@ ul li {
 
   .footer-bottom {
     padding: 2rem 2.5rem;
-    background-color: #606868;
     height: 770px;
   }
 
@@ -178,7 +177,26 @@ ul li {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  p {
+    font-size: 16px;
+  }
   
-  /* CSS */
-  
+  h1 { font-size: 40px; }
+  h2 { font-size: 35px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 25px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
+
+  .navbar {
+    padding: 0.5rem 1rem !important;
+  }
+  .footer-container {
+    padding: 2.5rem 1rem 0;
+    height: 650px;
+  }
+  .footer-bottom {
+    padding: 2rem 1rem;
+    height: 900px;
+  }
 }

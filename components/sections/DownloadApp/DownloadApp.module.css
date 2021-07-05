@@ -74,6 +74,13 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   
-  /* CSS */
+  .ImageDownload {
+    top: 15%;
+  }
+  .DownloadAppContainer {
+    top: 28px;
+    min-height: 1000px;
+  }
+  
   
 }
