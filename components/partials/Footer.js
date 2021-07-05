@@ -40,7 +40,7 @@ const Footer = () => {
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Control as="textarea" rows={8} placeholder="Messages" />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <Button type="submit" style={{ backgroundColor: '#F69B11', borderColor: '#F69B11'}}>
                 Submit
               </Button>
             </Form>

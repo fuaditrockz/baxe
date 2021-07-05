@@ -14,7 +14,7 @@ const Welcome = () => {
             <h4>Welcome to the</h4>
             <h4 style={{ fontWeight: '800' }}>Digital Economy</h4>
             <p>Click to the button to watch the video</p>
-            <Button>
+            <Button style={{ backgroundColor: '#008779', borderColor: '#008779'}}>
               Watch Now
             </Button>
             <div style={{

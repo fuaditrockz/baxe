@@ -58,7 +58,7 @@ const Features = () => {
             title='PTransfer your funds across the globe'
           />
           <Col lg={12} style={{ textAlign: 'center', marginTop: 30 }}>
-            <Button>
+            <Button style={{ backgroundColor: '#008779', borderColor: '#008779'}}>
               Watch Now
              </Button>
           </Col>
