@@ -79,7 +79,12 @@ ul li {
   margin-bottom: 70px;
 }
 
-@media only screen and (min-width: 1400px) {
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
   .navbar {
     padding: 0.5rem 6rem !important;
   }
@@ -91,14 +96,68 @@ ul li {
   }
 }
 
-@media only screen and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (-webkit-min-device-pixel-ratio: 1) {
-  /* tablets and desktop */
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
   
 }
 
-@media only screen and (max-width: 767px) {
-  /* phones */
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+  
+  h1 { font-size: 40px; }
+  h2 { font-size: 35px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 25px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
+
+  .navbar {
+    padding: 0.5rem 2rem !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
   
 }

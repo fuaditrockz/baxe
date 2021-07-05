@@ -5,6 +5,8 @@ import androidLogo from '../../../public/android-download.png'
 import iosLogo from '../../../public/appstore-download.png'
 import humanDownload from '../../../public/download-image.png'
 
+import styles from './DownloadApp.module.css'
+
 const ProviderLogo = ({
   provider
 }) => {
@@ -22,18 +24,10 @@ const ProviderLogo = ({
 
 const DownloadApp = () => {
   return (
-    <div
-      className="baxe-container"
-      style={{
-        position: 'relative',
-        top: -100,
-        backgroundColor: '#000',
-        minHeight: 200
-      }}
-    >
+    <div className={styles.DownloadAppContainer}>
       <Container fluid>
         <Row>
-          <Col lg={8} style={{ paddingTop: 40, paddingBottom: 50 }}>
+          <Col lg={8} md={6} style={{ paddingTop: 40, paddingBottom: 50 }}>
             <h4 style={{
               fontWeight: '800',
               color: '#FFF'
@@ -59,13 +53,8 @@ const DownloadApp = () => {
               <ProviderLogo provider='ios' />
             </div>
           </Col>
-          <Col>
-            <div style={{
-              width: '100%',
-              position: 'absolute ',
-              top: -80,
-              zIndex: 99
-            }}>
+          <Col lg={4} md={6}>
+            <div className={styles.ImageDownload}>
               <Image
                 src={humanDownload}
                 alt='Baxe Values'

@@ -1,11 +1,7 @@
-.Container {
-  width: 100%;
-  position: absolute;
-}
-
-.Menu {
-  font-size: 20px;
-  color: #fff;
+.WelcomeContainer {
+  padding: 0rem 2.5rem;
+  position: relative;
+  top: -94px;
 }
 
 /* 
@@ -14,8 +10,6 @@
 */
 
 @media (min-width: 1281px) {
-  
-  /* CSS */
   
 }
 
@@ -26,8 +20,6 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
-  /* CSS */
-  
 }
 
 /* 
@@ -36,9 +28,9 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
+  .WelcomeContainer {
+    top: 0px;
+  }
 }
 
 /* 
@@ -48,7 +40,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  /* CSS */
+  
   
 }
 

@@ -2,10 +2,6 @@ import Image from 'next/image'
 import {
   Navbar,
   Nav,
-  Form,
-  NavDropdown,
-  FormControl,
-  Button
 } from 'react-bootstrap'
 import { FiMenu } from "react-icons/fi"
 
@@ -15,7 +11,7 @@ import logo from '../../public/logo.png'
 const Header = () => {
   return (
     <Navbar expand="lg" className={styles.Container}>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="#">
         <Image
           src={logo}
           alt="Baxe Logo"

@@ -14,7 +14,7 @@ const FeaturedLogo = ({
   width,
 }) => {
   return (
-    <Col lg={4} style={{ display: 'flex', justifyContent: 'center' }}>
+    <Col lg={4} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
       <Image
         src={logoImg}
         alt={alt}
@@ -28,15 +28,15 @@ const FeaturedLogo = ({
 const Banner = () => {
   const renderTop = () => {
     return (
-      <Container fluid style={{ marginBottom: 330 }}>
+      <Container fluid className={styles.TopBanner}>
         <Row>
-          <Col lg={6}>
+          <Col lg={6} md={10}>
             <h4 style={{ color: '#fff', }}>The world’s most innovative</h4>
             <h1 style={{ color: '#fff', fontWeight: 'bold' }}>digital gateway<br />platform.</h1>
             <p style={{ color: '#fff' }}>
               BAXE is ushering in the next phase of the digital era. We are enabling the digital dream by redefining the internet, the way it was originally intended. Transparency and security are at the forefront of design. The BAXE platform is dencentralised, open and integrated into your everyday life.
             </p>
-            <div style={{ marginTop: 50 }}>
+            <div className={styles.CTAButtonContainer}>
               <Button className={styles.CTAButton}>
                 <IoMdPlayCircle
                   size={25}
@@ -55,8 +55,8 @@ const Banner = () => {
   const renderBottom = () => {
     return (
       <Container fluid>
-        <Row style={{ padding: '0 20rem 1rem' }}>
-          <Col lg={12}>
+        <Row className={styles.BottomBanner}>
+          <Col lg={12} sm={12}>
             <p style={{ color: '#6d7777', textAlign: 'center'}}>As featured on:</p>
           </Col>
           <FeaturedLogo

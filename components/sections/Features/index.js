@@ -5,12 +5,14 @@ import Pay from '../../../public/features/pay.png'
 import Secure from '../../../public/features/secure.png'
 import Global from '../../../public/features/global.png'
 
+import styles from './Features.module.css'
+
 const Feature = ({
   image,
   title
 }) => {
   return (
-    <Col lg={4} style={{ textAlign: 'center' }}>
+    <Col lg={4} md={4} style={{ textAlign: 'center' }}>
       <div style={{
         marginBottom: 20
       }}>
@@ -28,15 +30,7 @@ const Feature = ({
 
 const Features = () => {
   return (
-    <div
-      className="baxe-container"
-      style={{
-        position: 'relative',
-        top: -100,
-        minHeight: 200,
-        padding: '0 200px'
-      }}
-    >
+    <div className={styles.FeaturesContainer}>
       <Container fluid>
         <Row>
           <Col

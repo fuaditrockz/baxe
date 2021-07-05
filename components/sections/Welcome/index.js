@@ -3,15 +3,11 @@ import { Container, Row, Col, Button  } from 'react-bootstrap'
 
 import WelcomeImage from '../../../public/welcome-image.png'
 
+import styles from './Welcome.module.css'
+
 const Welcome = () => {
   return (
-    <div
-      className="baxe-container"
-      style={{
-        position: 'relative',
-        top: -94
-      }}
-    >
+    <div className={styles.WelcomeContainer}>
       <Container fluid>
         <Row>
           <Col style={{ textAlign: 'center' }}>

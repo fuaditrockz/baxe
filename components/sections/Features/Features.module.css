@@ -1,12 +1,10 @@
-.Container {
-  width: 100%;
-  position: absolute;
+.FeaturesContainer {
+  padding: 0rem 2.5rem;
+  position: relative;
+  top: -100px;
+  min-height: 200px;
 }
 
-.Menu {
-  font-size: 20px;
-  color: #fff;
-}
 
 /* 
   ##Device = Desktops
@@ -14,8 +12,6 @@
 */
 
 @media (min-width: 1281px) {
-  
-  /* CSS */
   
 }
 
@@ -25,9 +21,10 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
+  .FeaturesContainer {
+    padding: 0rem 2.5rem;
+    top: -5rem;
+  }
 }
 
 /* 
@@ -36,9 +33,10 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
+  .FeaturesContainer {
+    padding: 0rem 2.5rem;
+    top: -3rem;
+  }
 }
 
 /* 
@@ -48,7 +46,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  /* CSS */
+  
   
 }
 
