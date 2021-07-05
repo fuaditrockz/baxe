@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta property="og:image" content="https://res.cloudinary.com/telecreativenow/image/upload/v1625505271/BAXE/baxe-banner.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/telecreativenow/image/upload/c_scale,q_60,w_951/v1625505271/BAXE/baxe-banner.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://baxe.com" />
         <meta property="og:title" content="BAXE - The world’s most innovative digital gateway platform." />
