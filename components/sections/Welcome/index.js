@@ -1,4 +1,7 @@
+import Image from 'next/image'
 import { Container, Row, Col, Button  } from 'react-bootstrap'
+
+import WelcomeImage from '../../../public/welcome-image.png'
 
 const Welcome = () => {
   return (
@@ -6,7 +9,7 @@ const Welcome = () => {
       className="baxe-container"
       style={{
         position: 'relative',
-        top: -100
+        top: -94
       }}
     >
       <Container fluid>
@@ -18,14 +21,15 @@ const Welcome = () => {
             <Button>
               Watch Now
             </Button>
-            <img
-              src='/welcome-image.png'
-              alt='Baxe Values'
-              style={{
-                width: '100%',
-                marginTop: 20
-              }}
-            />
+            <div style={{
+              width: '100%',
+              marginTop: 20
+            }}>
+              <Image
+                src={WelcomeImage}
+                alt='Baxe Values'
+              />
+            </div>
           </Col>
         </Row>
       </Container>

@@ -1,4 +1,9 @@
+import Image from 'next/image'
 import { Container, Row, Col, Button  } from 'react-bootstrap'
+
+import Pay from '../../../public/features/pay.png'
+import Secure from '../../../public/features/secure.png'
+import Global from '../../../public/features/global.png'
 
 const Feature = ({
   image,
@@ -6,14 +11,16 @@ const Feature = ({
 }) => {
   return (
     <Col lg={4} style={{ textAlign: 'center' }}>
-      <img
-        src={image}
-        alt={title}
-        style={{
-          width: 112,
-          marginBottom: 20
-        }}
-      />
+      <div style={{
+        marginBottom: 20
+      }}>
+        <Image
+          src={image}
+          alt={title}
+          width={112}
+          height={112}
+        />
+      </div>
       <p style={{ fontWeight: 'bold' }}>{title}</p>
     </Col>
   )
@@ -45,15 +52,15 @@ const Features = () => {
             </h1>
           </Col>
           <Feature
-            image='/features/pay.png'
+            image={Pay}
             title='Pay for everyday items'
           />
           <Feature
-            image='/features/secure.png'
+            image={Secure}
             title='Keep your funds secure'
           />
           <Feature
-            image='/features/global.png'
+            image={Global}
             title='PTransfer your funds across the globe'
           />
           <Col lg={12} style={{ textAlign: 'center', marginTop: 30 }}>

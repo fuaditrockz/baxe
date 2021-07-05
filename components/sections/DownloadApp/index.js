@@ -1,4 +1,24 @@
+import Image from 'next/image'
 import { Container, Row, Col, Button  } from 'react-bootstrap'
+
+import androidLogo from '../../../public/android-download.png'
+import iosLogo from '../../../public/appstore-download.png'
+import humanDownload from '../../../public/download-image.png'
+
+const ProviderLogo = ({
+  provider
+}) => {
+  return (
+    <div className='mr-2'>
+      <Image
+        src={provider === 'android' ? androidLogo : iosLogo}
+        alt={provider === 'android' ? 'Playstore Download' : 'Appstore Download'}
+        width={189}
+        height={58}
+      />
+    </div>    
+  )
+}
 
 const DownloadApp = () => {
   return (
@@ -35,34 +55,22 @@ const DownloadApp = () => {
               display: 'flex',
               flexDirection: 'row',
             }}>
-              <img
-                src='/android-download.png'
-                alt='Playstore Download'
-                style={{
-                  width: 189,
-                  marginRight: 20
-                }}
-              />
-              <img
-                src='/appstore-download.png'
-                alt='Appstore Download'
-                style={{
-                  width: 189,
-                }}
-              />
+              <ProviderLogo provider='android' />
+              <ProviderLogo provider='ios' />
             </div>
           </Col>
           <Col>
-            <img
-              src='/download-image.png'
-              alt='Baxe Values'
-              style={{
-                width: '100%',
-                position: 'absolute ',
-                top: -80,
-                zIndex: 99
-              }}
-            />
+            <div style={{
+              width: '100%',
+              position: 'absolute ',
+              top: -80,
+              zIndex: 99
+            }}>
+              <Image
+                src={humanDownload}
+                alt='Baxe Values'
+              />
+            </div>
           </Col>
         </Row>
       </Container>
