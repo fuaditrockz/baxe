@@ -5,6 +5,12 @@ import { IoMdArrowDroprightCircle, IoMdArrowDropleftCircle } from 'react-icons/i
 import Pay from '../../../public/features/pay.png'
 import Secure from '../../../public/features/secure.png'
 import Global from '../../../public/features/global.png'
+import Funds from '../../../public/features/funds.png'
+import Reduce from '../../../public/features/reduce.png'
+import Trade from '../../../public/features/trade.png'
+import Conduct from '../../../public/features/conduct.png'
+import Manage from '../../../public/features/manage.png'
+import Baxe from '../../../public/features/baxe.png'
 
 import styles from './Features.module.css'
 
@@ -83,16 +89,16 @@ const Features = () => {
                 <Container>
                   <Row>
                     <Feature
-                      image={Pay}
-                      title='Pay for everyday items'
+                      image={Funds}
+                      title='Receive funds from anywhere in the world'
                     />
                     <Feature
-                      image={Secure}
-                      title='Keep your funds secure'
+                      image={Reduce}
+                      title='Reduce transaction costs'
                     />
                     <Feature
-                      image={Global}
-                      title='PTransfer your funds across the globe'
+                      image={Trade}
+                      title='Trade with people from any country'
                     />
                   </Row>
                 </Container>
@@ -101,16 +107,16 @@ const Features = () => {
                 <Container>
                   <Row>
                     <Feature
-                      image={Pay}
-                      title='Pay for everyday items'
+                      image={Conduct}
+                      title='Conduct business transactions'
                     />
                     <Feature
-                      image={Secure}
-                      title='Keep your funds secure'
+                      image={Manage}
+                      title='Manage your business operations'
                     />
                     <Feature
-                      image={Global}
-                      title='PTransfer your funds across the globe'
+                      image={Baxe}
+                      title='Connect you to the BAXE community'
                     />
                   </Row>
                 </Container>
