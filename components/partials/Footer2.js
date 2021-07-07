@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { Container, Row, Col, Button, Form } from 'react-bootstrap'
-import { FiInstagram, FiTwitter, FiLinkedIn, FiFacebook } from 'react-icons/fi'
+import { Container, Row, Col } from 'react-bootstrap'
+import { FiInstagram, FiTwitter, FiFacebook } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
 
 import logo from '../../public/logo.png'
@@ -84,16 +84,16 @@ const Footer2 = () => {
               display: 'flex',
               flexDirection: 'row',
             }}>
-              <a href='#' style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
+              <a href='https://www.facebook.com/BAXE-102846022065012' target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
                 <FiFacebook />
               </a>
-              <a href='#' style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
+              {/* <a href='#' target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
                 <FiTwitter />
-              </a>
-              <a href='#' style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
+              </a> */}
+              <a href='https://www.instagram.com/baxeapp/' target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
                 <FiInstagram />
               </a>
-              <a href='#' style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
+              <a href='https://www.linkedin.com/company/baxe' target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: 30, marginRight: 20}}>
                 <AiFillLinkedin />
               </a>
             </div>

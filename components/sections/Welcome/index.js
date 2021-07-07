@@ -24,6 +24,8 @@ const Welcome = () => {
               <Image
                 src={WelcomeImage}
                 alt='Baxe Values'
+                width={917}
+                height={725}
               />
             </div>
           </Col>
