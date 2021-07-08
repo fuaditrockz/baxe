@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import React, { useState, useEffect } from 'react'
 import { Container, Row, Col, Button, Carousel  } from 'react-bootstrap'
 import { IoMdArrowDroprightCircle, IoMdArrowDropleftCircle } from 'react-icons/io'
 
@@ -36,6 +37,120 @@ const Feature = ({
 }
 
 const Features = () => {
+  const [featuresData, setFeaturesData] = useState([])
+
+  const features = [
+    { image: Pay, caption: 'Pay for everyday items' },
+    { image: Secure, caption: 'Keep your funds secure' },
+    { image: Global, caption: 'PTransfer your funds across the globe' },
+    { image: Funds, caption: 'Receive funds from anywhere in the world' },
+    { image: Reduce, caption: 'Reduce transaction costs' },
+    { image: Trade, caption: 'Trade with people from any country' },
+    { image: Conduct, caption: 'Conduct business transactions' },
+    { image: Manage, caption: 'Manage your business operations' },
+    { image: Baxe, caption: 'Connect you to the BAXE community' },
+  ]
+
+  useEffect(() => {
+    const chunkedFeatures = chunkFeatures(features, 3)
+    setFeaturesData([...featuresData, ...chunkedFeatures])
+  }, [])
+
+  const chunkFeatures = (data, chunkSize) => {
+    var results = []
+
+    while (data.length) {
+      results.push(data.splice(0, chunkSize));
+    }
+
+    return results
+  }
+
+  const renderFeatures = (index) => {
+    if(featuresData.length !== 0) {
+      return featuresData[index].map((i, index) => (
+        <Feature
+          key={index}
+          image={i.image}
+          title={i.caption}
+        />
+      ))
+    }
+    return
+  }
+
+  const renderDesktopCarousel = () => {
+    return (
+      <Col lg={12} className={styles.FeaturesDesktop}>
+        <Carousel
+          style={{ height: 250 }}
+          nextIcon={
+            <p style={{ color: '#F69B11', fontSize: 40 }}>
+              <IoMdArrowDroprightCircle />
+            </p>
+          }
+          prevIcon={
+            <p style={{ color: '#F69B11', fontSize: 40 }}>
+              <IoMdArrowDropleftCircle />
+            </p>
+          }
+        >
+          <Carousel.Item>
+            <Container>
+              <Row>
+                {renderFeatures(0)}
+              </Row>
+            </Container>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Container>
+              <Row>
+                {renderFeatures(1)}
+              </Row>
+            </Container>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Container>
+              <Row>
+                {renderFeatures(2)}
+              </Row>
+            </Container>
+          </Carousel.Item>
+        </Carousel>
+      </Col>
+    )
+  }
+
+  const renderMobileCarousel = () => {
+    console.log(features)
+    return (
+      <Col lg={12} className={styles.FeaturesMobile}>
+        <Carousel
+          style={{ height: 250 }}
+          nextIcon={
+            <p style={{ color: '#F69B11', fontSize: 40 }}>
+              <IoMdArrowDroprightCircle />
+            </p>
+          }
+          prevIcon={
+            <p style={{ color: '#F69B11', fontSize: 40 }}>
+              <IoMdArrowDropleftCircle />
+            </p>
+          }
+        >
+          {features.map((i, index) => (
+            <Carousel.Item key={index}>
+              <Feature
+                image={i.image}
+                title={i.caption}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Col>
+    )
+  }
+
   return (
     <div className={styles.FeaturesContainer}>
       <Container fluid>
@@ -52,77 +167,8 @@ const Features = () => {
               What can BAXE do for you?
             </h1>
           </Col>
-          <Col lg={12}>
-            <Carousel
-              
-              style={{ height: 250 }}
-              nextIcon={
-                <p style={{ color: '#F69B11', fontSize: 40 }}>
-                  <IoMdArrowDroprightCircle />
-                </p>
-              }
-              prevIcon={
-                <p style={{ color: '#F69B11', fontSize: 40 }}>
-                  <IoMdArrowDropleftCircle />
-                </p>
-              }
-            >
-              <Carousel.Item>
-                <Container>
-                  <Row>
-                    <Feature
-                      image={Pay}
-                      title='Pay for everyday items'
-                    />
-                    <Feature
-                      image={Secure}
-                      title='Keep your funds secure'
-                    />
-                    <Feature
-                      image={Global}
-                      title='PTransfer your funds across the globe'
-                    />
-                  </Row>
-                </Container>
-              </Carousel.Item>
-              <Carousel.Item>
-                <Container>
-                  <Row>
-                    <Feature
-                      image={Funds}
-                      title='Receive funds from anywhere in the world'
-                    />
-                    <Feature
-                      image={Reduce}
-                      title='Reduce transaction costs'
-                    />
-                    <Feature
-                      image={Trade}
-                      title='Trade with people from any country'
-                    />
-                  </Row>
-                </Container>
-              </Carousel.Item>
-              <Carousel.Item>
-                <Container>
-                  <Row>
-                    <Feature
-                      image={Conduct}
-                      title='Conduct business transactions'
-                    />
-                    <Feature
-                      image={Manage}
-                      title='Manage your business operations'
-                    />
-                    <Feature
-                      image={Baxe}
-                      title='Connect you to the BAXE community'
-                    />
-                  </Row>
-                </Container>
-              </Carousel.Item>
-            </Carousel>
-          </Col>
+          {renderDesktopCarousel()}
+          {renderMobileCarousel()}
           <Col lg={12} style={{ textAlign: 'center', marginTop: 30 }}>
             <Button style={{ backgroundColor: '#008779', borderColor: '#008779'}}>
               Watch Now
