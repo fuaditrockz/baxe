@@ -31,8 +31,8 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://baxe.com" />
         <meta property="og:title" content="BAXE - The world’s most innovative digital gateway platform." />
-        <meta property="og:description" content="BAXE is more than just a digital currency. It’s the gateway between traditional financial systems and the emerging digital economy."
-        />
+        <meta property="og:description" content="BAXE is more than just a digital currency. It’s the gateway between traditional financial systems and the emerging digital economy." />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
       </Head>
       <Component {...pageProps} />
     </>
