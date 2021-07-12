@@ -105,7 +105,9 @@ const ValuesOfBAXEDesktop = () => {
   )
 }
 
-const Welcome = () => {
+const Welcome = ({
+  onClickWatchNow
+}) => {
   const [hideOnScroll, setHideOnScroll] = useState(true)
   const [scrollIndicator, setScrollIndicator] = useState(0)
   const [handPosition, setHandPosition] = useState('50%')
@@ -134,7 +136,13 @@ const Welcome = () => {
             <h4>Welcome to the</h4>
             <h4 style={{ fontWeight: '800' }}>Digital Economy</h4>
             <p>Click to the button to watch the video</p>
-            <Button style={{ backgroundColor: '#008779', borderColor: '#008779'}}>
+            <Button
+              onClick={onClickWatchNow}
+              style={{
+                backgroundColor: '#008779',
+                borderColor: '#008779'
+              }}
+            >
               Watch Now
             </Button>
           </Col>

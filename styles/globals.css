@@ -168,7 +168,9 @@ ul li {
 @media (min-width: 481px) and (max-width: 767px) {
   
   /* CSS */
-  
+  .embed-responsive {
+    top: 25% !important;
+  }
 }
 
 /* 

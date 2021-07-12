@@ -36,7 +36,7 @@ const Feature = ({
   )
 }
 
-const Features = () => {
+const Features = ({ onClickWatchNow }) => {
   const [featuresData, setFeaturesData] = useState([])
 
   const features = [
@@ -170,7 +170,7 @@ const Features = () => {
           {renderDesktopCarousel()}
           {renderMobileCarousel()}
           <Col lg={12} style={{ textAlign: 'center', marginTop: 30 }}>
-            <Button style={{ backgroundColor: '#008779', borderColor: '#008779'}}>
+            <Button onClick={onClickWatchNow} style={{ backgroundColor: '#008779', borderColor: '#008779'}}>
               Watch Now
              </Button>
           </Col>

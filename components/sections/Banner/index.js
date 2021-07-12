@@ -25,7 +25,7 @@ const FeaturedLogo = ({
   )
 }
 
-const Banner = () => {
+const Banner = ({ onClickLearnMore }) => {
   const renderTop = () => {
     return (
       <Container fluid className={styles.TopBanner}>
@@ -37,7 +37,7 @@ const Banner = () => {
               BAXE is ushering in the next phase of the digital era. We are enabling the digital dream by redefining the internet, the way it was originally intended. Transparency and security are at the forefront of design. The BAXE platform is dencentralised, open and integrated into your everyday life.
             </p>
             <div className={styles.CTAButtonContainer}>
-              <Button className={styles.CTAButton}>
+              <Button className={styles.CTAButton} onClick={onClickLearnMore}>
                 <IoMdPlayCircle
                   size={25}
                   color='#F69B11'
