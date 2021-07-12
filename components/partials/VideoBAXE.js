@@ -33,6 +33,7 @@ const VideoBAXE = ({
       display: isVideoShow ? 'flex' : 'none'
     }} onClick={onClickBackground}>
       <YouTube
+        className="mfp-hide embed-responsive embed-responsive-21by9"
         onEnd={onEndVideo}
         videoId={videoID}
         opts={opts}
