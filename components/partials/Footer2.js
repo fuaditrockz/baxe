@@ -47,30 +47,30 @@ const Footer2 = () => {
           <Menu
             title="About"
             menus={[
-              { link: '#', menu: 'What is BAXE?' },
-              { link: '#', menu: 'Why use BAXE?' },
-              { link: '#', menu: 'Our Team' },
-              { link: '#', menu: 'Our Partners' }
+              { link: '/what-is-baxe', menu: 'What is BAXE?' },
+              { link: '/why-use-baxe', menu: 'Why use BAXE?' },
+              { link: '/our-team', menu: 'Our Team' },
+              { link: '/our-partners', menu: 'Our Partners' }
             ]}
           />
           <Menu
             title="The Digital Economy"
             menus={[
-              { link: '#', menu: 'What is the Digital Economy?' },
-              { link: '#', menu: "What's next?" },
+              { link: '/what-is-the-digital-economy', menu: 'What is the Digital Economy?' },
+              { link: '/whats-next', menu: "What's next?" },
             ]}
           />
           <Menu
             title="BAXE for Business"
             menus={[
-              { link: '#', menu: 'How it works?' },
+              { link: '/how-it-works', menu: 'How it works?' },
             ]}
           />
           <Menu
             title="Mobile App"
             menus={[
-              { link: '#', menu: 'How to use?' },
-              { link: '#', menu: 'Download' },
+              { link: '/how-to-use', menu: 'How to use?' },
+              { link: '/download', menu: 'Download' },
             ]}
           />
           <Menu
