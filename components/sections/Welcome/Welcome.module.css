@@ -10,7 +10,12 @@
 */
 
 @media (min-width: 1281px) {
-  
+  .WelcomeImageMobile {
+    display: none;
+  }
+  .WelcomeImageDesktop {
+    display: block;
+  }
 }
 
 /* 
@@ -19,7 +24,12 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+  .WelcomeImageMobile {
+    display: none;
+  }
+  .WelcomeImageDesktop {
+    display: block;
+  }
 }
 
 /* 
@@ -31,6 +41,12 @@
   .WelcomeContainer {
     top: 0px;
   }
+  .WelcomeImageMobile {
+    display: none;
+  }
+  .WelcomeImageDesktop {
+    display: block;
+  }
 }
 
 /* 
@@ -40,7 +56,12 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  
+  .WelcomeImageMobile {
+    display: none;
+  }
+  .WelcomeImageDesktop {
+    display: block;
+  }
   
 }
 
@@ -52,7 +73,12 @@
 @media (min-width: 481px) and (max-width: 767px) {
   
   /* CSS */
-  
+  .WelcomeImageMobile {
+    display: block;
+  }
+  .WelcomeImageDesktop {
+    display: none !important;
+  }
 }
 
 /* 
@@ -63,5 +89,11 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .WelcomeContainer {
     top: 34px;
+  }
+  .WelcomeImageMobile {
+    display: block;
+  }
+  .WelcomeImageDesktop {
+    display: none !important;
   }
 }

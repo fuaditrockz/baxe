@@ -23,7 +23,20 @@ const highlights = [
   { image: community, title: 'People Community', caption: 'Embrace opportunities to connect and empower your community in the digital age.' },
 ]
 
-const ValuesOfBAXE = () => {
+const ValuesOfBaxeMobile = () => {
+  return (
+    <div className={styles.WelcomeImageMobile}>
+      <Image
+        src={WelcomeImage}
+        alt='Baxe Values'
+        width={400}
+        height={310}
+      />
+    </div>
+  )
+}
+
+const ValuesOfBAXEDesktop = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -58,13 +71,18 @@ const ValuesOfBAXE = () => {
   const renderValues = () => {
     if(data.length !== 0) {
       return data.map((i, index) => (
-        <ScrollAnimation animateIn="fadeIn" key={index} style={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          position: 'relative',
-          right: setRightPosition(index)
-        }}>
+        <ScrollAnimation
+          className={styles.WelcomeImageDesktop}
+          animateIn="fadeIn"
+          key={index}
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            position: 'relative',
+            right: setRightPosition(index)
+          }}
+        >
           <Image
             src={i.image}
             alt='Baxe Values'
@@ -120,7 +138,7 @@ const Welcome = () => {
               Watch Now
             </Button>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} className={styles.WelcomeImageDesktop}>
             <div style={{
               width: '100%',
               marginTop: 20,
@@ -138,7 +156,8 @@ const Welcome = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <ValuesOfBAXE />
+            <ValuesOfBAXEDesktop />
+            <ValuesOfBaxeMobile />
           </Col>
         </Row>
       </Container>
