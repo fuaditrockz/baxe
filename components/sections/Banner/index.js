@@ -14,7 +14,7 @@ const FeaturedLogo = ({
   width,
 }) => {
   return (
-    <Col lg={4} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
+    <Col lg={4} md={4} xs={4} className={styles.FeaturedLogo}>
       <Image
         src={logoImg}
         alt={alt}

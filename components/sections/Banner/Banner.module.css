@@ -34,6 +34,11 @@
   padding: 0 20rem 1rem;
 }
 
+.FeaturedLogo {
+  display: flex;
+  justify-content: center;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -121,12 +126,13 @@
   .Banner {
     height: 700px;
     padding: 5rem 1rem 1rem;
+    background-image: url('../../../public/home-banner-mobile.png');
   }
   .BottomBanner {
     padding: 0 1rem 1rem;
   }
   .TopBanner {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
   
 }
