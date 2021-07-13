@@ -45,7 +45,7 @@ const Menu = ({
       <div className='MenuCol'>
         <Container>
           <Row>
-            <Col lg={6} style={{ marginBottom: 18 }}>
+            <Col lg={6} xs={6} style={{ marginBottom: 18 }}>
               <Image
                 src={logo}
                 alt="Baxe Logo"
@@ -53,8 +53,7 @@ const Menu = ({
                 width={110}
               />
             </Col>
-            <Col lg={6} style={{ textAlign: 'right' 
-          }}>
+            <Col lg={6} xs={6} style={{ textAlign: 'right' }}>
               <a onClick={closeMenu} className={styles.Menu}>
                 <IoMdClose />
               </a>
@@ -122,12 +121,12 @@ const Header = () => {
             width={158}
           />
         </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
+        <div className="banner-divider" />
+        <div className="justify-content-end">
           <a onClick={openMenu} className={styles.Menu}>
             <FiMenu />
           </a>
-        </Navbar.Collapse>
+        </div>
       </Navbar>    
     </>
   )
