@@ -88,6 +88,23 @@ ul li {
   display: none;
 }
 
+.MenuContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.MenuCol {
+  position: absolute;
+  background-color: #181822;
+  width: 467px;
+  height: 553px;
+  right: 0;
+  padding: 20px 10px;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
