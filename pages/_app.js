@@ -33,8 +33,15 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="BAXE - The world’s most innovative digital gateway platform." />
         <meta property="og:description" content="BAXE is more than just a digital currency. It’s the gateway between traditional financial systems and the emerging digital economy." />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WQVC9Z8');`}}></script>
+
       </Head>
       <Component {...pageProps} />
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQVC9Z8" height="0" width="0" style={{ display:'none', visibility: 'hidden' }}></iframe></noscript>
     </>
   )
 }
