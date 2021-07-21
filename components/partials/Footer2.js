@@ -6,10 +6,7 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import logo from '../../public/logo.png'
 import ivce from '../../public/ivce.png'
 
-const Menu = ({
-  title,
-  menus
-}) => {
+const Menu = ({ title, menus }) => {
   return (
     <Col lg={2} md={4}>
       <h6 style={{ color: '#fff', fontWeight: 'bold'}}>{title}</h6>
