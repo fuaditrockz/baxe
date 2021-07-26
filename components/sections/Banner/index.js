@@ -34,7 +34,7 @@ const Banner = ({ onClickLearnMore }) => {
             <h4 style={{ color: '#fff', }}>The world’s most innovative</h4>
             <h1 style={{ color: '#fff', fontWeight: 'bold' }}>digital gateway<br />platform.</h1>
             <p style={{ color: '#fff' }}>
-              BAXE is ushering in the next phase of the digital era. We are enabling the digital dream by redefining the internet, the way it was originally intended. Transparency and security are at the forefront of design. The BAXE platform is dencentralised, open and integrated into your everyday life.
+              BAXE is ushering in the next phase of the digital era. We are enabling the digital dream by redefining the internet, the way it was originally intended. Transparency and security are at the forefront of design. The BAXE platform is decentralised, open and integrated into your everyday life.
             </p>
             <div className={styles.CTAButtonContainer}>
               <Button className={styles.CTAButton} onClick={onClickLearnMore}>

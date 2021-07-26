@@ -42,7 +42,7 @@ const Features = ({ onClickWatchNow }) => {
   const features = [
     { image: Pay, caption: 'Pay for everyday items' },
     { image: Secure, caption: 'Keep your funds secure' },
-    { image: Global, caption: 'PTransfer your funds across the globe' },
+    { image: Global, caption: 'Transfer your funds across the globe' },
     { image: Funds, caption: 'Receive funds from anywhere in the world' },
     { image: Reduce, caption: 'Reduce transaction costs' },
     { image: Trade, caption: 'Trade with people from any country' },
