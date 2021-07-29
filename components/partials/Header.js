@@ -61,8 +61,8 @@ const Menu = ({
           </Row>
           <Row>
             {renderMenuList('About', [
-              { title: 'What is BAXE?', link: '/what-is-baxe' },
-              { title: 'Why use BAXE?', link: '/why-use-baxe' },
+              { title: 'What is BAXE?', link: '/about' },
+              { title: 'Why use BAXE?', link: '/about' },
               { title: 'Our Team', link: '/our-team' },
               { title: 'Our Partners', link: '/our-partners' }
             ])}
