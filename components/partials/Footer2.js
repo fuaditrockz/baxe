@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FiInstagram, FiTwitter, FiFacebook } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
@@ -31,12 +32,14 @@ const Footer2 = () => {
       <Container fluid>
         <Row>
           <Col lg={2}>
-            <Image
-              src={logo}
-              alt="Baxe Logo"
-              height={43.94}
-              width={158}
-            />
+            <Link href='/'>
+              <Image
+                src={logo}
+                alt="Baxe Logo"
+                height={43.94}
+                width={158}
+              />
+            </Link>
             <p style={{ color: '#fff', fontSize: 16, marginTop: 20 }}>
               BAXE harnesses revolutionary new technologies to create a truly borderless and connected global economy.
             </p>

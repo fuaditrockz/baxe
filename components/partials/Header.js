@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import {
   Container,
@@ -114,12 +115,14 @@ const Header = () => {
       <Menu isShow={showMenu} closeMenu={closeMenu} />
       <Navbar expand="lg" className={styles.Container}>
         <Navbar.Brand href="#" style={{ display: 'flex' }}>
-          <Image
-            src={logo}
-            alt="Baxe Logo"
-            height={43.94}
-            width={158}
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Baxe Logo"
+              height={43.94}
+              width={158}
+            />
+          </Link>
         </Navbar.Brand>
         <div className="banner-divider" />
         <div className="justify-content-end">

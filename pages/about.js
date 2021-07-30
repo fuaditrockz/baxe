@@ -4,6 +4,8 @@ import { Container } from 'react-bootstrap'
 import { Header, Footer, Footer2, VideoBAXE } from '../components/partials'
 
 import RegularBanner from '../components/sections/RegularBanner'
+import WhatIsBaxe from '../components/sections/WhatIsBaxe'
+import OurPartners from '../components/sections/OurPartners'
 
 export default function About() {
   const [showVideo, setShowVideo] = useState(false)
@@ -37,8 +39,9 @@ export default function About() {
       <Header />
       <Container fluid>
         <RegularBanner />
+        <WhatIsBaxe />
+        <OurPartners />
       </Container>
-      <Footer />
       <Footer2 />
     </>
   )  
