@@ -32,7 +32,7 @@ const Footer2 = () => {
       <Container fluid>
         <Row>
           <Col lg={2}>
-            <Link href='/'>
+            <Link passHref={true} href='/'>
               <Image
                 src={logo}
                 alt="Baxe Logo"

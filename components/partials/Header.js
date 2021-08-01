@@ -116,7 +116,7 @@ const Header = () => {
       <Menu isShow={showMenu} closeMenu={closeMenu} />
       <Navbar expand="lg" className={styles.Container}>
         <Navbar.Brand href="#" style={{ display: 'flex' }}>
-          <Link href="/">
+          <Link passHref={true} href="/">
             <Image
               src={logo}
               alt="Baxe Logo"
