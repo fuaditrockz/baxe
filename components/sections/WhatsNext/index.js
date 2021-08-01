@@ -11,7 +11,7 @@ const WhatsNext = () => {
             <Row>
               <Col lg={3} xs={12}>
                 <div className={styles.Title}>
-                  <h3 style={{ fontWeight: '800', color: 'white'}}>What's <br /> Next?</h3>
+                  <h3 style={{ fontWeight: '800', color: 'white'}}>What&rsquo;s <br /> Next?</h3>
                 </div>
               </Col>
             </Row>
