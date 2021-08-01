@@ -1,8 +1,8 @@
-import { Container, Row, Col  } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import styles from './WhatIsBaxe.module.css'
 
-const WhatIsBaxe = () => {
+const WhatIsDigitalEconomy = () => {
   return (
     <div className={styles.WhatIsBaxeContainer}>
       <Container fluid>
@@ -49,4 +49,4 @@ const WhatIsBaxe = () => {
   )
 }
 
-export default WhatIsBaxe
+export default WhatIsDigitalEconomy

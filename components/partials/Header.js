@@ -69,10 +69,10 @@ const Menu = ({
             ])}
             {renderMenuList('The Digital Economy', [
               { title: 'What is the Digital Economy?', link: '/digital_economy' },
-              { title: `What's next?`, link: '/whats-next' }
+              { title: `What's next?`, link: '/digital_economy' }
             ])}
             {renderMenuList('The Digital Economy', [
-              { title: 'How it Works?', link: '/how-it-works' }
+              { title: 'How it Works?', link: '/baxe_for_business' }
             ])}
             {renderMenuList('Mobile App', [
               { title: 'How to Use?', link: '/how-to-use' },

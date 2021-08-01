@@ -63,7 +63,7 @@ const Footer2 = () => {
           <Menu
             title="BAXE for Business"
             menus={[
-              { link: '/how-it-works', menu: 'How it works?' },
+              { link: '/baxe_for_business', menu: 'How it works?' },
             ]}
           />
           <Menu

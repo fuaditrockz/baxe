@@ -1,10 +1,21 @@
-import { Container, Row, Col, Jumbotron, Button  } from 'react-bootstrap'
-import { IoMdPlayCircle } from 'react-icons/io'
-import Image from 'next/image'
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
 
 import styles from './RegularBanner.module.css'
 
-const RegularBanner = ({ title, subtitle }) => {
+const RegularBanner = ({ title, subtitle, bannerFor }) => {
+  const getBannerStyle = () => {
+    switch (bannerFor) {
+      case 'business':
+        return styles.RegularBannerBusiness
+      case 'mobile':
+        return styles.RegularBannerMobile
+      case 'support':
+        return styles.RegularBannerSupport
+      default:
+        return styles.RegularBanner
+    }
+  }
+
   const renderTop = () => {
     return (
       <Container fluid className={styles.TopBanner}>
@@ -21,7 +32,7 @@ const RegularBanner = ({ title, subtitle }) => {
   }
 
   return (
-   <Jumbotron className={styles.RegularBanner}>
+   <Jumbotron className={getBannerStyle()}>
      {renderTop()}
    </Jumbotron> 
   )

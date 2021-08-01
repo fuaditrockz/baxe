@@ -7,6 +7,33 @@
   padding: 7rem 2.5rem;
 }
 
+.RegularBannerBusiness {
+  background-image: url('../../../public/banner-business.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 7rem 2.5rem;
+}
+
+.RegularBannerMobile {
+  background-image: url('../../../public/banner-mobile-app.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 7rem 2.5rem;
+}
+
+.RegularBannerSupport {
+  background-image: url('../../../public/banner-support.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 7rem 2.5rem;
+}
+
 .CTAButtonContainer {
   margin-top: 20px;
 }
@@ -50,6 +77,18 @@
     height: 875px;
     padding: 7rem 6rem;
   }
+  .RegularBannerBusiness {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerMobile {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerSupport {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
   .TopBanner {
     margin-bottom: 330px;
   }
@@ -67,6 +106,18 @@
     height: 660px;
     padding: 7rem 2rem;
   }
+  .RegularBannerBusiness {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerMobile {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerSupport {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
   .TopBanner {
     margin-bottom: 100px;
   }
@@ -83,6 +134,18 @@
   .RegularBanner {
     height: 600px;
     padding: 5rem 2rem 1rem;
+  }
+  .RegularBannerBusiness {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerMobile {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerSupport {
+    height: 875px;
+    padding: 7rem 6rem;
   }
   .BottomBanner {
     padding: 0 1rem 1rem;
@@ -102,6 +165,18 @@
   .RegularBanner {
     height: 800px;
     padding: 1rem 2rem 5rem;
+  }
+  .RegularBannerBusiness {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerMobile {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerSupport {
+    height: 875px;
+    padding: 7rem 6rem;
   }
 }
 
@@ -127,6 +202,18 @@
     height: 700px;
     padding: 5rem 1rem 1rem;
     background-image: url('../../../public/regular-banner-mobile.png');
+  }
+  .RegularBannerBusiness {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerMobile {
+    height: 875px;
+    padding: 7rem 6rem;
+  }
+  .RegularBannerSupport {
+    height: 875px;
+    padding: 7rem 6rem;
   }
   .BottomBanner {
     padding: 0 1rem 1rem;
