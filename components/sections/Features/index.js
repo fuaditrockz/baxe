@@ -122,7 +122,6 @@ const Features = ({ onClickWatchNow }) => {
   }
 
   const renderMobileCarousel = () => {
-    console.log(features)
     return (
       <Col lg={12} className={styles.FeaturesMobile}>
         <Carousel

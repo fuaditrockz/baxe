@@ -126,8 +126,6 @@ const Welcome = ({
     }
   }, [scrollIndicator])
 
-  console.log(handPosition)
-
   return (
     <div className={styles.WelcomeContainer}>
       <Container fluid>
