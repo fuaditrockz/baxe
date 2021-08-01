@@ -36,20 +36,20 @@ const Feature = ({
   )
 }
 
+const features = [
+  { image: Pay, caption: 'Pay for everyday items' },
+  { image: Secure, caption: 'Keep your funds secure' },
+  { image: Global, caption: 'Transfer your funds across the globe' },
+  { image: Funds, caption: 'Receive funds from anywhere in the world' },
+  { image: Reduce, caption: 'Reduce transaction costs' },
+  { image: Trade, caption: 'Trade with people from any country' },
+  { image: Conduct, caption: 'Conduct business transactions' },
+  { image: Manage, caption: 'Manage your business operations' },
+  { image: Baxe, caption: 'Connect you to the BAXE community' },
+]
+
 const Features = ({ onClickWatchNow }) => {
   const [featuresData, setFeaturesData] = useState([])
-
-  const features = [
-    { image: Pay, caption: 'Pay for everyday items' },
-    { image: Secure, caption: 'Keep your funds secure' },
-    { image: Global, caption: 'Transfer your funds across the globe' },
-    { image: Funds, caption: 'Receive funds from anywhere in the world' },
-    { image: Reduce, caption: 'Reduce transaction costs' },
-    { image: Trade, caption: 'Trade with people from any country' },
-    { image: Conduct, caption: 'Conduct business transactions' },
-    { image: Manage, caption: 'Manage your business operations' },
-    { image: Baxe, caption: 'Connect you to the BAXE community' },
-  ]
 
   useEffect(() => {
     const chunkedFeatures = chunkFeatures(features, 3)
