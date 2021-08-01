@@ -4,15 +4,15 @@ import Image from 'next/image'
 
 import styles from './RegularBanner.module.css'
 
-const RegularBanner = () => {
+const RegularBanner = ({ title, subtitle }) => {
   const renderTop = () => {
     return (
       <Container fluid className={styles.TopBanner}>
         <Row>
           <Col lg={6} md={10}>            
-            <h1 style={{ color: '#fff', fontWeight: 'bold' }}>About us</h1>
+            <h1 style={{ color: '#fff', fontWeight: 'bold' }}>{title}</h1>
             <p style={{ color: '#fff' }}>
-              Read more about us
+              {subtitle}
             </p>
           </Col>
         </Row>

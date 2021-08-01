@@ -11,7 +11,7 @@ export default function About() {
     <>
       <Header />
       <Container fluid>
-        <RegularBanner />
+        <RegularBanner title='About us' subtitle='Read more about us' />
         <WhatIsBaxe />
         <OurPartners />
       </Container>

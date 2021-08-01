@@ -1,4 +1,4 @@
-import { Container, Row, Col  } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import YouTube from 'react-youtube'
 
 import styles from './WhatIsBaxe.module.css'
