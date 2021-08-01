@@ -54,7 +54,7 @@ const Features = ({ onClickWatchNow }) => {
   useEffect(() => {
     const assemblyData = () => {
       const chunkedFeatures = chunkFeatures(features, 3)
-      setFeaturesData([...featuresData, ...chunkedFeatures])
+      setFeaturesData( f => [...featuresData, ...chunkedFeatures])
     }
     assemblyData()
   }, [])
