@@ -6,7 +6,7 @@ import RegularBanner from '../components/sections/RegularBanner'
 import WhatIsBaxe from '../components/sections/WhatIsBaxe'
 import OurPartners from '../components/sections/OurPartners'
 
-export default function About() {
+export default function DigitalEconomy() {
   return (
     <>
       <Header />

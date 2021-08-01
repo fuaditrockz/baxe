@@ -68,7 +68,7 @@ const Menu = ({
               { title: 'Our Partners', link: '/our-partners' }
             ])}
             {renderMenuList('The Digital Economy', [
-              { title: 'What is the Digital Economy?', link: '/what-is-the-digital-economy' },
+              { title: 'What is the Digital Economy?', link: '/digital_economy' },
               { title: `What's next?`, link: '/whats-next' }
             ])}
             {renderMenuList('The Digital Economy', [

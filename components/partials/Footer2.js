@@ -56,7 +56,7 @@ const Footer2 = () => {
           <Menu
             title="The Digital Economy"
             menus={[
-              { link: '/what-is-the-digital-economy', menu: 'What is the Digital Economy?' },
+              { link: '/digital_economy', menu: 'What is the Digital Economy?' },
               { link: '/whats-next', menu: "What's next?" },
             ]}
           />
