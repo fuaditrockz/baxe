@@ -79,8 +79,9 @@ const Menu = ({
               { title: 'Download', link: '/download' },
             ])}
             {renderMenuList('Support', [
-              { title: 'Terms & Conditions', link: '#' },
-              { title: 'Privacy Policy', link: '#' },
+              { title: 'Support', link: '/support' },
+              { title: 'Terms & Conditions', link: '/terms-and-conditions' },
+              { title: 'Privacy Policy', link: '/privacy-policy' },
             ], true)}
             <Col lg={6} style={{
               textAlign: 'center'

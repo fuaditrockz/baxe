@@ -75,7 +75,9 @@ const Footer2 = () => {
           />
           <Menu
             title="Support"
-            menus={[]}
+            menus={[
+              { link: '/support', menu: 'Support' },
+            ]}
           />
         </Row>
         <Row>
